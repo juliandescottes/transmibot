@@ -1,0 +1,4 @@
+{% for torrent in torrents %}{% if torrent.isActive %}*active* {{ torrent.percentDone|floatformat:"0" }}% : {{ torrent.name }}
+{% else %}{% if torrent.isNotCompleted %}*paused* : {{ torrent.percentDone|floatformat:"0" }}% : {{ torrent.name }}
+{% else %}{% if all %}*completed* : {{ torrent.name }}
+{% endif %}{% endif %}{% endif %}{% endfor %}

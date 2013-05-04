@@ -1,0 +1,12 @@
+# APPLICATION SETTINGS
+AUTHORIZED_USERS = ['your.user@gmail.com']
+DEFAULT_TIMEOUT = 30.0
+
+# TRANSMISSION SETTINGS
+_PROTOCOL = "http" 
+_DOMAIN = "YOURDOMAIN_OR_IP"
+_PORT = "9091" # by default transmission listens on PORT 9091
+
+TRANSMISSION_URL = _PROTOCOL + "://" + _DOMAIN + ":" + _PORT + "/transmission/rpc"
+TRANSMISSION_USR = "USERNAME"
+TRANSMISSION_PWD = "PASSWORD"

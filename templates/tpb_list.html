@@ -1,0 +1,3 @@
+{% for tpb_item in tpb_items %}
+[{{ forloop.counter }}] {{ tpb_item.name }} ({{tpb_item.size}}) ({{tpb_item.seeders}}/{{tpb_item.leechers}})
+{% endfor %}
